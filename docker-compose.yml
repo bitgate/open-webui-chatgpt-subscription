@@ -1,0 +1,20 @@
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    ports:
+      - "3000:8080"
+    volumes:
+      - open-webui:/app/backend/data
+    environment:
+      - WEBUI_SECRET_KEY=${WEBUI_SECRET_KEY:?Set WEBUI_SECRET_KEY in .env}
+      - OPENAI_API_BASE_URL=https://api.plan2api.com/v1
+      - OPENAI_API_KEY=${PLAN2API_KEY:?Set PLAN2API_KEY in .env}
+      - TASK_MODEL_EXTERNAL=openai/gpt-6-luna
+      - ENABLE_OLLAMA_API=false
+      # Plan2API Pro or Scale: image generation on your ChatGPT plan
+      # - ENABLE_IMAGE_GENERATION=true
+      # - IMAGE_GENERATION_MODEL=gpt-image-2
+    restart: unless-stopped
+
+volumes:
+  open-webui:
