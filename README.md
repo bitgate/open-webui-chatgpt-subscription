@@ -78,9 +78,9 @@ Keep **API Type** on `Chat Completions`: Plan2API does not serve the Responses A
 | Model id | Runs on | Context window |
 | --- | --- | --- |
 | `openai/gpt-6.1-sol` | ChatGPT Plus, Pro or Business (Codex) | listed by `GET /v1/models` |
-| `openai/gpt-6-astra` | ChatGPT Plus and higher | listed by `GET /v1/models` |
-| `openai/gpt-6.1-terra` | ChatGPT Plus, Pro, Business, Enterprise or Edu | listed by `GET /v1/models` |
-| `openai/gpt-6-luna` | ChatGPT Plus and higher, the light and fast one | listed by `GET /v1/models` |
+| `openai/gpt-6-astra` | ChatGPT Plus, Pro or Business (Codex), the most capable | listed by `GET /v1/models` |
+| `openai/gpt-6.1-terra` | ChatGPT Plus, Pro or Business (Codex) | listed by `GET /v1/models` |
+| `openai/gpt-6-luna` | ChatGPT Plus, Pro or Business (Codex), the low-cost high-volume one | listed by `GET /v1/models` |
 | `claude/claude-sonnet-5` | Claude Pro or Max | 1,000,000 |
 | `claude/claude-opus-5-5` | Claude Pro or Max | 1,000,000 |
 | `claude/claude-haiku-4-5` | Claude Pro or Max | 200,000 |
